@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$fw-400: 400;
+$fw700: 700;
+$ff-poppins: 'poppins';
+$White: hsl(0, 0%, 100%);
+$Slate-300: hsl(212, 45%, 89%);
+$Slate-500: hsl(216, 15%, 48%);
+$Slate-900: hsl(218, 44%, 22%);
+*, *::before, *::after {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: $Slate-300;
+    font-size: 1em;
+    font-family: $ff-poppins;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    .card {
+        border-radius: .8rem;
+        background-color: $White;
+        height: auto;
+        width: 20rem;
+        padding: 1rem;
+        text-align: center;
+        img {
+            border-radius: 0.5rem;
+            height: 18rem;
+            width: 18rem;
+            margin-bottom: 1rem;
+        }
+        .title {
+            color: $Slate-900;
+            font-weight: 700;
+            padding-bottom: .5rem;
+            font-size: 1.25rem;
+        }
+        .sentence {
+            color: $Slate-500;
+            margin-bottom: 1rem;
+        }
+    }
+    .attribution {
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
